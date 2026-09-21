@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vs-mod-updater"
+version = "0.1.0"
+description = "Check installed Vintage Story mods for updates and install mods (with dependencies) from mods.vintagestory.at, using only the Python standard library."
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+vs-mod-updater = "updater:main"
+
+[tool.setuptools]
+py-modules = ["updater"]
