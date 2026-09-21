@@ -18,39 +18,37 @@ A small command-line tool for [Vintage Story](https://www.vintagestory.at/) that
 ### pip install directly from git
 
 ```bash
-pip install git+https://github.com/<your-username>/vs-mod-updater.git
+pip install git+https://github.com/jgwoolley/vs-mod-updater.git
 ```
 
-Replace `<your-username>/vs-mod-updater` with wherever you push this repo.
+Replace `jgwoolley/vs-mod-updater` with wherever you push this repo.
 This installs a `vs-mod-updater` command on your `PATH`.
 
 To install a specific branch or tag:
 
 ```bash
-pip install "git+https://github.com/<your-username>/vs-mod-updater.git@<branch-or-tag>"
+pip install "git+https://github.com/jgwoolley/vs-mod-updater.git@<branch-or-tag>"
 ```
 
 To upgrade later:
 
 ```bash
-pip install --upgrade git+https://github.com/<your-username>/vs-mod-updater.git
+pip install --upgrade git+https://github.com/jgwoolley/vs-mod-updater.git
 ```
 
 ### From a local clone
 
 ```bash
-git clone https://github.com/<your-username>/vs-mod-updater.git
+git clone https://github.com/jgwoolley/vs-mod-updater.git
 cd vs-mod-updater
 pip install .
 ```
 
-Use `pip install -e .` instead if you want an editable install while
-developing.
+Use `pip install -e .` instead if you want an editable install while developing.
 
 ### Without installing
 
-Since it's a single stdlib-only script, you can also just run it directly
-with no install step:
+Since it's a single stdlib-only script, you can also just run it directly with no install step:
 
 ```bash
 python3 updater.py
